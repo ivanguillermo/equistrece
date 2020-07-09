@@ -1,0 +1,23 @@
+{
+  "short_name": "Ivan",
+  "name": "Ivan Lopez Pedreanez",
+  "icons": [
+    {
+      "src": "/images/ivan512.jpg",
+      "type": "image/webp",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/imgx/ivan192.jpg",
+      "type": "image/x-icon",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "ivanlopezpedreanez.net.ve/#educador",
+  "background_color": "#000",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#4fdb98",
+  "orientation": "landscape"
+
+}
