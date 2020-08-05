@@ -1,1207 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-			<link href="/manifest.json" rel="manifest" />
 
-			<link href="imgx/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-			<link href="imgx/favicon.ico" rel="icon" type="image/x-icon" />
+  <head>
+          <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV9DCM');</script>
+      <!-- End Google Tag Manager -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-			<meta content='Website personal de Ivan Lopez Pedreanez' name='description'/>
-			<title>Ivan Lopez Pedreanez</title>
-		
-		<link async="async" href="" rel="stylesheet" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link async="async" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> 
-		<script async='async' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#3d47d9">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#3d47d9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/manifest.json" rel="manifest" />
 
-		<link async="async" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="/favicon-16x16.png" type="image/x-icon">
 
-		<link async="async" href="https://fonts.googleapis.com/css?family=Nova+Square|Barriecito|Roboto|Lora|Raleway" rel="stylesheet" />
-
-		<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
-        <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
-	</head>
-	<body>
-	<!-- Main -->
-		<div>
-			<div class="jumbotron" id='jumbo_ivan'>
-				<div class="container">
-					<div class="media">
-						<div class="media-left media-middle">
-							<img alt="ivanlopezpedreanez" class="media-object" src="yo2019.png" />
-							<button class="btn btn-lg" href="#" role="button" id="about_btn">	Mi Historia
-						</div>
-						<div class="media-body">
-							<h1 class="media-heading" style='font-size:7vh'>Ivan Lopez Pedreañez</h1>
-							<div id='resume' class="resume">
-								<p>Me llamo Ivan y soy<a>Programador Web</a> y traductor freelance</p>
-								<p>Estudio Matemática y Educación Informática, y amo crear blogs educativos</p>
-								<p>Me encantan los deportes, el cine, la tecnología y la literatura</p>
-							</div>
-						</div>					
-					</div>
-				</div>
-			</div>
-
-			<style>
-					.jumbotron {
-							height: 92vh;
-							width: 100vw;
-							background: url("https://www.dropbox.com/s/ek9n0lri4bykfz5/background.jpg?raw=1") no-repeat fixed center  ; 									
-							background-size: cover;
-							display: flex;
-							flex-flow:row wrap;
-							justify-content: center;
-							align-items: center;
-							overflow: hidden
-							}
-						
-					
-					.jumbotron *{margin:2%;text-align:center;}
-					.media-object{border-radius:50%;width:45vh;border:4px solid black;}
-					.media-heading{font-family:Sans;font-weight: 200; position: relative; left:17.5%;font-size: 80%; }
-						.resume p{padding-right:-10%;text-align: right; font-size: 16px;}
-					#about_btn{font-weight:800; color:white; height:5vh; width:7vw; display: inline-flex; align-items: center; align-content: center; justify-content: center; font-size: 12px; background: transparent; border: 2px solid var(--color);text-shadow: 1px 1px black; box-shadow: -0.5px 0.5px black}
-
-					@media only screen and (max-width: 800px) {
-						.jumbotron {flex-flow:column nowrap;}
-						.media{display: flex;flex-flow:row wrap;}
-						.media-object{width:40%;margin-left: 30%; border-width: 0px; padding:0% 2%; }
-						#about_btn{display:none;}
-						.resume {padding-left:0%;text-align: center}
-						.media-heading{font-size:50%; }
-						
-						.resume p{color:white;text-shadow: 1px 1px black; font-weight: 800;}
-					}						
-					a:link{text-decoration:none }
-			
-			</style>
-								
-
-
-			<nav id='navbarIvan' class="navbar navbar-inverse navbar-fixed-bottom ">
-		          <div class="container-fluid" id='fluid' style='display:flex;'>
-		            <div class="navbar-header" style='display:flex; height:100%'>
-		              
-		              <a class="navbar-brand" href="#" style="background-color:var(--color); color:black;font-weight: 400;"><b>Hola!</b></a>
-					
-				      <a id='navYo' class="navbar-link" href="#quote" style="text-decoration: none;align-self: center"><b><i style="color:white;">Ivan Guillermo</i></b>
-		              	<img alt='yo' src="imgx/ivan512.png"/>
-		              </a>
-		              		
-					  
-		              
-		              <a id='navPro' class="navbar-link" href="#programmer" style="text-decoration: none;align-self: center">
-		              	<img alt='programador' src="imgx/prog.gif"/>
-		              	<span>PROGRAMADOR</span>
-		              </a>
-		              <a id='navMat' class="navbar-link" href="#matematico" style="text-decoration: none;align-self: center">
-		              	<span>MATEMATICO</span>
-		              	<img alt='matematico' src="imgx/icono_mat.png"/>
-		              </a>
-
-		              <a id='navTra' class="navbar-link" href="#translator" style="text-decoration: none;align-self: center">
-		              	<span>TRADUCTOR</span>
-		              	<img alt='traductor' src="imgx/trans.gif"/>
-		              </a>
-
-		              <a id='navEdu' class="navbar-link" href="#educador" style="text-decoration: none;align-self: center">
-		              	<span>EDUCADOR</span>
-		              	<img alt='educador' src="imgx/ivan512.png"/>
-		              </a>
-
-		              
-		              
-		              <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button" onclick="document.getElementById('fluid').style.display='';document.getElementById('contacto').style.position='';">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar">
-						</span>
-					  </button>
-		            </div>
-		          <ul class="nav navbar-nav navbar-right" id='contacto' style="position: absolute; right:1.5%">
-			          	<li>
-			              <a href="contacto.html" style="background-color:var(--color);color:white"><b>Contacto</b></a>
-			            </li>
-			          </ul>
-
-		          <div class="navbar-collapse collapse" id="navbar">
-			          <ul class="nav navbar-nav">		         		          	         	
-			          	<li class="dropdown" >
-			              <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" role="button" 
-			              ><span>Algo mas</span> </a> 
-			            	<ul class="dropdown-menu">
-			            		<li><a href="likes/index.html">Mis Gustos</a></li>
-			            		<li class="divider" role="separator"></li>
-			            		<li><a href="cursos.html">Cursos</a></li>
-			            		<li class="divider" role="separator"></li>
-			            		<li><a href="bio.html">Biografia</a></li>
-			            		<li class="divider" role="separator"></li>
-			            		<li id="contacto_nav">
-					              <a href="contacto.html" >Contacto</a>
-					            </li>
-			            	</ul>
-			            </li>
-			          </ul>
-			       </div>
-			          
-			       </div>
-		    </nav>
-
-		    <style type="text/css">
-
-		    		.navbar{min-height:8vh;}
-
-		    	.navbar-header{}
-		    	.navbar-brand{;}
-				.navbar-link{display:flex; flex-flow: row wrap; justify-content: center; align-content: center; align-content: center;height:4vh; width:10vw; padding:1.5vw;font-size:1vw;}
-				.color {color:var(--color);}
-				.navbar-link {height:4vh; display:flex;}
-				.navbar-link span{color:var(--color); align-self: center}
-				
-				.navbar-link img{width: 44px;height:44px;display:none;padding:0px 2px;}
-
-				.dropdown-menu li a:hover {background-color: var(--color); color:white; font-weight: 600}
-				.dropdown-toggle{width:190%; color:white; align-self: flex-end; text-align: center}
-				#contacto_nav{display: none}
-
-
-
-				
-				
-				@media only screen and (max-width: 800px) {
-					.navbar{width:100vw;}
-					.container-fluid{width:100vw;position:relative;left:0px;}
-					#navYo{display:inline-flex;}
-
-					.navbar-toggle {}
-					.navbar-brand{width:15vw;font-size: 2.5vw; text-align: center}
-					.navbar-link span{display:none;}
-					.navbar-link img{display:block; padding:0vh;margin-left:1vw; width:7vw;height:7vw;}
-					.dropdown-toggle{width:100%; color:white; align-self: flex-end; text-align: center}
-					.dropdown{}
-					#contacto{display:none;width:15vw;position:static;left:85vw;}
-					#contacto_nav{display: flex}				
-
-					}
-		    </style>
-
-			<div id="quote" class="">
-				<q>Es sencillo hacer que las cosas sean complicadas, pero difícil hacer que sean sencillas</q>
-				<p>Friedrich Nietzsche</p>
-			</div>
-
-			
-
-			<style>
-						#quote{display:flex; align-content: center; align-items: center; justify-content: space-around; flex-flow: column wrap;  text-align:center;color:white;height:12vh;}
-					#quote q{font-size: 120%}
-					#yo_descripcion {background:transparent;}
-					#mi_nombre {text-align:center; padding-top:; color:#ddd; text-shadow: 2px 1px 2px #4fdb98  ; }
-					#descripcion {text-align:center; color:#fff; font-weight: 500; text-shadow: 0.5px 0.5px #292929; padding:0% 15%;}
-					@media only screen and (max-width: 800px) {
-						section {height:150px;}
-						#descripcion {font-size: 9px;padding:3.5%;text-align: justify;}
-
-					}
-			</style>
-
-			<div id="logos">
-				<div id='yo_descripcion'>
-				<h3 id="mi_nombre" >Ivan Guillermo</h3>
-				<p id="descripcion">
-					Soy un joven venezolano actualmente viviendo en Argentina. Apasionado por estudiar y aprender cada d&iacute;a un poco m&aacute;s. y luego siempre busco poner en pr&aacute;ctica lo que aprendo, para resolver problemas de la vida real y sobre todo ayudar a los dem&aacute;s con los suyos. Me considero a mi mismo como...
-				</p>
-				</div>								
-				<div class='logos_profs'>
-					<div class='icon'>
-						<img class='logo_prof' src='https://www.dropbox.com/s/0tf1mltg0teav0j/trans.gif?raw=1' id="transl_ico" alt='traductor'/>
-						<div>
-							<h2 class='tit_prof' >TRADUCTOR</h2>
-							<p class="prof_txt" >
-								Buscando nuevas perspectivas, descubrí que debo tomar las fuentes en su idioma original
-								Revisa mi perfil en <a style='color:var(--green) ' href="https://www.freelancer.com/u/IvanD413R" rel="noopener" target="_blank"> Freelancer.com</a>
-								y los trabajos que he realizado allí;
-							</p>
-						</div>			
-					</div>
-					<div id='adasda' class='icon'>
-						<img class='logo_prof' src='https://www.dropbox.com/s/v3lllxp1jqrkr1z/prog.gif?raw=1' id="programmr_ico" alt='programador'/>
-						<div>
-							<h2 class='tit_prof'>PROGRAMADOR</h2>
-							<p class="prof_txt" >
-								Disfruto buscar soluciones a los problemas, y la programación me ofrece la posibilidad de alcanzar
-								<a href="https://github.com/ivanguillermo" rel="noopener" target="_blank">soluciones óptimas</a> 
-								mirando las cosas desde perspectivas nuevas
-							</p>
-						</div>
-					</div>
-					<div class='icon'>
-						<img class='logo_prof' src='https://www.dropbox.com/s/su1etfai7t3p21b/icono_mat.png?raw=1' id="matemat_ico"  alt='matematico'/>
-						<div>
-							<h2 class='tit_prof'>MATEMÁTICO</h2>
-							<p class="prof_txt" >Actualmente curso el último año de Licenciatura en Matemáticas en la 
-								<a href="https://www.una.edu.ve" rel="noopener" target="_blank">Universidad Nacional Abierta</a> (UNA). Particularmente amo la estadísticas y la optimización
-							</p>
-						</div>			
-					</div>
-				</div>
-			</div>
-
-			<style>
-				#logos{background:#555;
-					   display:flex;
-					   flex-flow:column wrap;
-					   align-items: center;
-					   justify-content: space-around;
-					   align-content: center;
-					   height:80vh;
-					   width:100vw;
-					   color:black;
-						}
-				.logos_profs{display:flex;
-						flex-flow:row nowrap;
-						align-items: center;
-						justify-content: space-around;
-							width:100%}
-					.logo_prof{height:25vh;}
-					.tit_prof{font-family: Sans; font-size: 2vw; font-weight: 200}
-					.icon {
-						display:flex;
-						flex-flow:column nowrap;
-						align-items: center;
-						justify-content: space-between;
-						
-						}
-					.icon div h2,.icon div a {color:#ff7f2a;text-align:center;text-shadow: 1px 1px #222222;font-family:Roboto;}
-					
-					.icon:first-child h2, .icon:first-child a{color: var(--green)}
-					.icon:last-child h2, .icon:last-child a{color: var(--blue)}
-					.icon div p {width:19.5vw;color:white;text-align: center}
-
-				@media only screen and (max-width: 800px) {
-						#logos {flex-flow:column nowrap;}
-						.logos_profs{flex-flow:column wrap;width:100vw}
-						.icon {flex-flow:row nowrap;}
-						.icon img {width:14vh;height:14vh;}
-						.icon div {font-size:9px;color:var(--green);}
-						
-						.icon div p {width: 65vw;}
-						.icon div h2{font-size: 10px;}
-
-					}
-			</style>
-
-			<div id="sections">
-				<section class="job" id="translator">
-					<h2 class='sec_tit'>TRADUCTOR</h2>
-					<div class='body2' id="myDIV2">
-					</div>
-					<div id="langs_p">
-						<p style='color:black'>Por un tiempo me dedique a realizar traducciones como freelancer. Principalmente de Ingles a Espanol y viceversa. Pero tambien realice otras traducciones que me ayudaron a crear una cultura de responsabilidad y compromiso</p>
-						<span id="tr_txt" style="color:#eee; text-shadow: 1px 1px black; font-weight: 600;">							
-							Puedo traducir entre varios idiomas. Soy un hablante nativo de ESPAÑOL y altamente competente en INGLÉS.
-							<br />Y además soy capaz de traducir a esos 2 idiomas desde:
-							<br />ALEMÁN 🇩🇪  FRANCÉS 🇫🇷  ITALIANO 🇮🇹 PORTUGUES 
-						</span>
-					</div>
-					<div id="langs" style="float:right; display:flex; justify-content: space-between; align-items: center">
-						<!--por-->
-						<a class='aflag' data-lang='0'> <img id='br-flag' alt="brazil-flag" class="flagies" src="https://www.dropbox.com/s/yj0wdmitqttggq5/bra.png?raw=1" /></a> 
-						<!--ger-->
-						<a class='aflag' data-lang='1'>	<img id='de-flag' alt="germany-flag" class="flagies" src="https://www.dropbox.com/s/t39q4ct22uoguf8/deu.png?raw=1" /></a> 
-						<!--fra-->
-						<a class='aflag' data-lang='2'>	<img id='fr-flag' alt="france-flag" class="flagies" src="https://www.dropbox.com/s/xbg893s64dvaxn8/fra.png?raw=1" /></a> 
-						<!--ita-->
-						<a class='aflag' data-lang='3'>	<img id='it-flag' alt="italy-flag" class="flagies" src="https://www.dropbox.com/s/h2m2kpf3er31x6j/spa.png?raw=1" /></a> 
-						<!--spa-->
-						<a class='aflag big_flag' data-lang='4'>	<img id='sp-flag' alt="spain-flag" class="flagies" src="https://www.dropbox.com/s/b33a3a4648cg5jw/ita.png?raw=1" /></a> 
-						<!--eng-->
-						<a class='aflag' data-lang='5'>	<img id='us-flag' alt="usa-flag" style='width:34px' class="flagies" src="https://www.dropbox.com/s/y97ongk6iplq97k/eng.png?raw=1" /></a>
-					</div>
-					<script>
-						const idiomas=[
-							'Eu posso traduzir entre vários idiomas. Eu sou um falante nativo de ESPANHOL e sou altamente proficiente em INGLÊS.<br/> Eu também posso traduzir para esses 2 idiomas de:<br/> ALEMAO 🇩🇪 FRANCÈS 🇫🇷 ITALIANO 🇮🇹 PORTUGES',
-
-							'Ich kann zwischen mehreren Sprachen übersetzen. Ich bin ein Muttersprachler von SPANISCH und ich bin sehr gut in ENGLISCH.<br/> Ich kann auch in diese 2 Sprachen übersetzen von:<br/> DEUTSCH🇩🇪   FRANZöSISCH 🇫🇷 ITALIENISCH 🇮🇹 PORTUGES', 
-
-							'Je peux traduire entre plusieurs langues. Je suis un locuteur natif de L`ESPAGNOL et je suis très compétent en ANGLAIS . <br/>Je peux aussi traduire vers ces 2 langues depuis:<br/> ALLEMAN 🇩🇪  FRANÇAIS 🇫🇷    ITALIAN 🇮🇹 PORTUGAIS',
-
-							'Posso tradurre tra più lingue. Sono un madrelingua SPAGNOLO e sono molto bravo in INGLESE. <br/>E posso anche tradurre in quelle 2 lingue da:<br/> TEDESCO 🇩🇪   FRANCESE 🇫🇷  ITALIANO 🇮🇹 PORTOGHESE',	
-
-							'Puedo traducir entre varios idiomas. Soy un hablante nativo de ESPAÑOL y soy altamente competente en INGLÉS. <br/>Y además puedo traducir a esos 2 idiomas desde:<br/> ALEMÁN 🇩🇪  FRANCÉS 🇫🇷  ITALIANO 🇮🇹 PORTUGUÉS',	 
-
-							'I can translate between several languages. I am a native speaker of SPANISH and I am highly proficient in ENGLISH.  <br/>And I can also translate to those 2 languages from:<br/> GERMAN 🇩🇪  FRENCH 🇫🇷  ITALIAN 🇮🇹 PORTUGES'];
-
-						const langs = document.getElementById('langs');
-						const flagies = Array.from(langs.querySelectorAll('.aflag'));
-						const lang_txt = document.getElementById('tr_txt');
-
-						flagies.forEach(flag => flag.addEventListener('click', flangs));
-						
-						function flangs(){							 								 	
-						 	var x = this.dataset.lang ;
-						 	var z = langs.querySelector('.big_flag');
-
-						 	flagies.forEach(flag => flag.classList.remove('big_flag'));
-						 	this.classList.add('big_flag')
-						 	lang_txt.innerHTML=idiomas[x];	
-						 }					 
-
-							 
-							   				
-					</script>
-					<style>
-						#translator{background: var(--color) url('https://www.dropbox.com/s/6qp7habxfp7h3f8/ballon_langs.png?raw=1') left bottom no-repeat  fixed ; height:93vh;font-weight: 500; text-shadow: 0.5px 0.5px #292929;}
-							#langs{width:25%; align-self: flex-end; justify-content: flex-end; margin-right: 15%;}
-							
-								#flag_icons{float:right; margin-left: 10px}
-					 			.flagies{margin: 1px;}
-					 			#langs_p{font-family: raleway; line-height:185%; font-size:21px; float:right; color:white; width:60%;text-align: center; margin:4% 10% 5% 30%;}
-					 			.languages{padding-top:100px;margin:1px;}
-
-					 			.big_flag img{transform: rotate(30deg);}
-
-						@media only screen and (max-width: 800px) {
-							#translator{background: var(--color)}
-							#langs_p{ line-height:150%; width:75%;text-align: justify; margin:4% 10% 5% 10%;font-size: 16px;}							
-							#langs{margin-right:50%;}
-							.body2{display:none;}
-							
-						}
-					</style>			
-				</section>
-
-				<section class="job" id="programmer">
-					<h2 class='sec_tit'>PROGRAMADOR</h2>		
-					<p>Comence a interesarme por la programacion en <span style='font-size:150%'>2014</span>. </p>
-					<p>El primer curso que hice fue de Javascript en la plataforma <a href='Codecademy.com'>Codecademy.com</a>, donde tambien realice cursos de Python y Java. Para mis estudios de matematica aprender a programar en Pascal y Octave. Sin embargo, fue cuando en mi carrera de Educacion Informatica tuve la necesidad de aprender <span class='att_pls'>HTML</span> y <span class='att_pls'>PHP</span> que descubri mi verdadera pasion: <span style='color:white; font-weight: 500; font-size: 150%;text-shadow: 3px 2px darkcyan'><i>La programacion Frontend</i></span>
-					</p>
-					<p>Desde entonces me he especializado por mi cuenta en <b><i>HTML, CSS y Javascript</i></b>. Utilizo tambien herramientas como GIT. Estoy familiarizado con Node.js y SASS, y regularmente utilizo Bootstrap, React.JS y JQuery.
-					<div id="progr_langs">
-						<div class='p_langs' id="python" >
-							<a target="_blank" href='https://github.com/ivanguillermo/python'>
-								<img class='p_langs_img' alt="python" src='imgx/devs/python.png'/>
-							</a>
-							<div class="projects">
-								<ul>
-									<li>
-										<a target='_blank' href='https://github.com/ivanguillermo/python/blob/master/Lagrange.py'>
-											Lagrange
-										</a>
-									</li>
-									<li>
-										<a target='_blank' href=''>
-											.
-										</a>
-									</li>
-									<li>
-										<a target='_blank' href='https://github.com/ivanguillermo/python/blob/master/Integral_doble_metodo_de_Simpson.py'>Integral Langrange
-										</a>
-									</li>
-																
-								</ul>
-							</div>
-						</div>
-						<div class='p_langs' id="html"> 
-							<img class='p_langs_img' alt='html5' src='imgx/devs/html.png'/>
-							<div class="projects">
-								<ul>
-									<li><a target='_blank' href='https://github.com/ivanguillermo/30dayJSchallenge/blob/master/30%20-%20Whack%20A%20Mole/index-START.html'>MaduroCTM</a></li>
-									<li><a target='_blank' href=''>.</a></li>
-									<li><a target='_blank' href='https://github.com/ivanguillermo/30dayJSchallenge/blob/master/12%20-%20Key%20Sequence%20Detection/index-START.html'>Piano</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class='p_langs' id="css"> 
-							<img class='p_langs_img' alt='css' src='imgx/devs/css.png'/>
-							<div class="projects">
-								<ul>									
-									<li><a  target='_blank' href=''></a>.</li>
-									<li><a  target='_blank' href=''>Gatanimation</a></li>
-									<li><a  target='_blank' href=''></a>.</li>
-								</ul>
-							</div>
-						</div>
-						<div class='p_langs' id="js"> 
-							<img class='p_langs_img' alt="javascript" src='imgx/devs/js.png'/>
-							<div class="projects">
-								<ul>
-									<li><a target='_blank' href=''></a>.</li>
-									<li><a target='_blank' href=''>Multichange</a></li>									
-									<li><a target='_blank' href=''></a>.</li>
-								</ul>
-							</div>
-						</div>
-						<div class='p_langs' id="php">
-							<a target="_blank" href='https://github.com/ivanguillermo/PrettyHorribleProjects'> 
-							<img class='p_langs_img' alt="php" src='imgx/devs/php2.png'/>
-							<div class="projects">
-								<ul>
-									<li>
-										<a target='_blank' href='https://github.com/ivanguillermo/PrettyHorribleProjects/blob/master/caja_registradora.php'>
-											Caja Registradora
-										</a>
-									</li>
-									<li>
-										<a target='_blank' href='https://github.com/ivanguillermo/PrettyHorribleProjects/blob/master/cajero_2.php'>
-											Cajero
-										</a>
-									</li>
-									<li>
-										<a target='_blank' href='https://github.com/ivanguillermo/PrettyHorribleProjects/blob/master/prom_notas.php'>
-											Prom. Notas
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class='p_langs' id="mysql">  
-							<a  target='_blank' href='https://github.com/ivanguillermo/mySQL_databases'>
-								<img class='p_langs_img' alt="mysql" src='imgx/devs/mysql.png'/>
-							</a>
-							<div class="projects">
-								<ul>
-									<li>
-										<a target='_blank' href=''>
-											
-										</a>
-									</li>
-									<li>
-										<a target='_blank' href=''>
-											
-										</a>
-									</li>
-									<li>
-										<a target='_blank' href=''>
-											
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>	
-					<button class='github_btn'> <a style='color:white; text-decoration-style: none' href='https://github.com/ivanguillermo'>mi GutHub <i class="fa fa-github"></i></a></button>
-					<style type="text/css">
-						#programmer{background:var(--orange) left top no-repeat fixed ; display:flex; flex-flow: column wrap; justify-content: flex-start; align-items: center;align-content: stretch; height:95vh;}
-
-							#progr_langs{display:flex; flex-flow: row wrap; justify-content: space-between; align-items: space-around; align-content: center; width:80%;height:10vh;
-										 border:4px solid var(--blue);border-radius:80px; margin-top: 5%;
-										 background-color: #1AA9ECa2}
-							#programmer h2{margin-bottom: 2%}
-							#programmer p{font-family:raleway; text-align: center; margin:1% 8%; color:#111111; font-size: 17px; text-shadow: 0px 0px black; font-weight: 300;}
-
-							.p_langs{display:flex; flex-flow:column nowrap; justify-content: center;align-items: center;}
-							.p_langs img{border: 5px solid white;border-radius: 50%; height:7.2vw;}
-
-							.p_langs:first-child{flex-direction:row-reverse;}
-							.p_langs:first-child img{border:0px;}
-							.p_langs:nth-child(2){flex-direction:column-reverse;}
-							.p_langs:nth-child(5){flex-direction:column-reverse;}
-							.p_langs:nth-child(6){flex-direction:row;}
-								.projects{
-									width:90px;
-									height:15vh;
-									background-color: white;
-									border: 4px red;
-									visibility: hidden;
-									border-radius:7% 30% 7% 10%;
-									border: 1px solid black;
-															
-								}				
-								.projects ul {list-style-type:none; margin-left: -30%;text-decoration: none;}		
-								.p_langs:hover > * {visibility: visible;}
-								.projects::before {width: 25px; background-color: var(--color); height:30px; content: ' < / > '; color:white; border-radius: ;top:-30px; border-top:1px solid var(--color)}
-								.github_btn{
-									font-weight:400; color:white; text-shadow: 1px 1px var(--orange);
-									height:8vh; width:24vw; margin-top:5%; 
-									
-									display: inline-flex; align-items: center; align-content: center; justify-content: center; font-size: 2vw; 
-									background: black;
-									border: 1px double black; box-shadow:0.1px 0.1px #fff7 ; border-radius: 25px 25px
-									 								
-									
-									}
-							@media only screen and (max-width: 800px) {
-								#programmer p{font-size: 14px;	 }
-								.p_langs img {width:7.5vw; border: 1px solid white; height:7.5vw;}
-								.projects{display:none;}
-								.github_btn{display:none; background:black;height:6vh;} 
-							}
-					</style>
-				</section>
-
-				<section class="job" id="matematico">
-					<h2 class='sec_tit'>MATEMATICO</h2>
-					<div class="carousel slide" data-ride="carousel" id="myCarousel">
-							<!-- Indicators -->
-							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-								<li data-slide-to="1" data-target="#myCarousel"></li>
-								<li data-slide-to="2" data-target="#myCarousel"></li>
-							</ol>
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item ">
-									<img alt="Estadistica" id='mat_img0' src="imgx/estadistica.png" />
-									
-									<div class="carousel-caption">
-										<div class="mat_art">
-											<a target='_blank' href='https://docs.google.com/presentation/d/e/2PACX-1vRndRh69UxkKMdnXo-8NJuSvBFVhPO-vALoLAyaacHHZVURx8OxoYz-jZB30PoLCX65PiN6oJyoqfo3/pub?start=false&loop=false&delayms=3000'> <div id="est_pptx_1" class="est_pptx mat_arts" alt='Datos no Agrupados'></div></a>
-											<a target='_blank' href='https://docs.google.com/presentation/d/e/2PACX-1vQ8euIkKrum8Us_pAYqfVeceGPcNuJ444mnR2W5u06Vae6dMXjVJr4EYEi43IBVAHishGzwFCF4zhll/pub?start=false&loop=false&delayms=3000'> <div id="est_pptx_2" class="est_pptx mat_arts" alt='Probabilidad'></div></a>
-											<a target='_blank' href='https://docs.google.com/presentation/d/e/2PACX-1vQUNevSzp9rmdiU0mIPO2FuzAuadkPzzfpbKYPKUDaECiSISXvEDIVgUc4Qag3bIdGbR2_uFx1-LLQh/pub?start=false&loop=false&delayms=3000'> <div id="est_pptx_3" class="est_pptx mat_arts" alt='Algebra de Conjuntos'></div></a>  
-										</div>
-										<div>
-											<h3>ESTADÍSTICAS</h3>
-										<p>Describir al conjunto de datos obtenidos para la toma de decisiones</p>
-											
-										</div>
-									</div>
-								</div>
-
-								<div class="item">
-									<img alt="Calculo" id='mat_img1' src="imgx/calculo.png" />
-									
-
-									<div class="carousel-caption">												
-										<div class="mat_art">
-											<div class="mat_arts"><a target='_blank'  href='https://docs.google.com/document/d/e/2PACX-1vQWri_NNj0CwWdnBT1TGx6T_diQFyZ5WEOp1Rrz1GzahfzktMhIqLKL5y3dIkEm-3N9yjR5WarkQkhB/pub'> Integracion Imaginaria</a></div>
-											<div class="mat_arts"><a target='_blank'  href='https://docs.google.com/presentation/d/e/2PACX-1vQrWrRbGcxRPtw9ZoMiwevnYa9r33CHRGjXaUZmh2ASk5PXFUO-juHLfegCYvVP0pBNQDKqJRHRDUJz/pub?start=false&loop=false&delayms=3000'>Raiz cuadrada de una recta</a></div>
-											<div class="mat_arts"><a target='_blank'  href='https://docs.google.com/document/d/e/2PACX-1vTGWhOqoDkZWZ7o30ViC4UsPv2QrWeoDXF9eDWMVYq-7ho_GW7Wrt13oThJl4bmt8Yl-rWqJeSichTU/pub'>All in One</a></div>  
-										</div>	
-										<h3>CÁLCULO</h3>
-										<p>Determinar las consecuencias cuantificables de eventos y circunstacias de las que tenemos informacion relevante</p>
-									</div>
-								</div>
-
-
-								<div class="item active">
-									<img alt="Optimizacion" id='mat_img2' src="imgx/optimizacion.png"/>									
-										
-									<div id='optimizacion'class="carousel-caption">
-										<h3 >OPTIMIZACIÓN</h3>
-											<p>Selección del mejor elemento de un conjunto de elementos disponibles</p>
-											<p>Son técnicas de modelización matemática</p>
-											<p>que permiten dar respuesta a problemas de planificación</p>
-											<p>y apoyar de una forma eficiente el proceso de toma de decisiones</p>
-											<br/>
-											<br/>
-									</div>
-								</div>
-							</div>
-							<!-- Left and right controls -->
+    <meta name="msapplication-TileColor" content="#3d47d9">
+    <meta name="msapplication-TileImage" content="img/equistrece_logo_circle.png">
+    <meta name="theme-color" content="#3d47d9">
+    <meta class='swiftype' name='image' data-type='enum' content='img/equistrece_logo.png' />
+    <meta name="image" content="img/equistrece_logo.png">
+    <meta name="keywords" content="musica, anime, videos, clips, film, movies, peliculas, music, juegos, videogames, equistrece">
+    <meta name="author" content="Ivan Lopez Pedreanez">
     
-							<a class="left carousel-control" data-slide="prev" href="#myCarousel">
-								<span class='glyphicon glyphicon-chevron-left'/>
-								<span class="sr-only">Previous</span> 
-							</a>
-							<a class="right carousel-control" data-slide="next" href="#myCarousel">
-								<span class='glyphicon glyphicon-chevron-right'/>
-								<span class="sr-only">Next</span>
-							</a>
-						</div>
-						
-						<style type="text/css">
-							#matematico{background-color:var(--blue);
-										display:flex; 
-										flex-flow: column wrap ; 
-										justify-content: center; 
-										align-items: center; 
-										height: 91vh}
-
-							.carousel{display:flex; 
-									 flex-flow: ;
-									 justify-content: center; 
-									 align-items: center;
-									 align-content: center; }
-
-							.carousel-inner .item {flex-flow: row wrap}
-
-							.carousel-inner .item img{width:99vw;
-								                      height:75vh;
-								                      text-align: center}
-
-							.carousel-caption {background:rgb(10,10,10,0.52);
-												bottom:;width:100%;
-												left:0;
-												padding-top: 30%}
-
-							.mat_art
-											{
-												display: flex;
-												flex-flow:row wrap;
-												align-content: center;
-												justify-content: space-evenly;
-												align-items: baseline;
-												
-												width:100vw;
-												background:transparent;
-												color:blue;
-												padding:2px;
-												margin:7px;
-												
-												position:relative;
-												left:0%;
-											}
-											.mat_arts
-											{
-												display: inline-flex;
-												flex-flow:row wrap;												
-												width:20vw;
-												height:20vw;												
-
-												background:#ccca;
-												color:blue;
-												border-color: black;
-												padding:2px;
-												
-												justify-content: center;
-												align-content: center;
-												align-items: center;												
-											}
-
-							.est_pptx{																	
-								border: 10px solid black;										
-								width:20vw;
-								height:10vw;
-							}
-							#est_pptx_1 {background-image: url('imgx/pptx/datos_no_agrupados.png');background-size:cover;}
-							#est_pptx_2 {background-image: url('imgx/pptx/probabilidad.png');background-size:cover;}
-							#est_pptx_3 {background-image: url('imgx/pptx/alg_conj.png');background-size:cover;}	
-
-							#optimizacion p{background: white; color:black;}							
-							
-
-							@media only screen and (max-width: 800px) {								
-								.carousel-inner .item img{width:99vw;height:45vh;text-align: center}
-								.carousel-caption {font-size: 10px;padding-top: 40%}
-							}
-						</style>
-				</section>
-
-				<section class="job" id="educador">
-					<h2  class="pptx pptx21 sec_tit">EDUCADOR</h2>
-					<div class="pptx pptx0" data-pptx='0'>
-						<a href='#id01' id='pptx_link0'><img id='pptx_img0' alt='pptx0' src='https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/datos_no_agrupados.png'/></a>
-					</div>
-					<div class="pptx pptx1" data-pptx='1'>
-						<a href='#id01' id='pptx_link1'><img id='pptx_img1' alt='pptx1' src='https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/electronica_digital.png'/></a>
-					</div>
-					<div class="pptx pptx2" data-pptx='2'>
-						<a href='#id01' id='pptx_link2'><img id='pptx_img2' alt='pptx2' src='https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/funciones.png'/></a>
-					</div>
-					<div class="pptx pptx3" data-pptx='3'>
-						<a href='#id01' id='pptx_link3'><img id='pptx_img3' alt='pptx3' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/datos_no_agrupados.png"/></a>
-					</div>
-					<div class="pptx pptx4" data-pptx='4'>
-						<a href='#id01' id='pptx_link4'><img id='pptx_img4' alt='pptx4' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/derivada.png"/></a>
-					</div>
-					<div class="pptx pptx5" data-pptx='5'>
-						<a href='#id01' id='pptx_link5'><img id='pptx_img5' alt='pptx5' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/didactica.png"/></a>
-					</div>
-					<div class="pptx pptx6" data-pptx='6'>
-						<a href='#id01' id='pptx_link6'><img id='pptx_img6' alt='pptx6' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/electronica_digital.png"/></a>
-					</div>
-					<div class="pptx pptx7" data-pptx='7'>
-						<a href='#id01' id='pptx_link7'><img id='pptx_img7' alt='pptx7' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/estructura_datos_2.png"/></a>
-					</div>
-					<div class="pptx pptx8" data-pptx='8'>
-						<a href='#id01' id='pptx_link8'><img id='pptx_img8' alt='pptx8' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/estructura_datos_3.png"/></a>
-					</div>
-					<div class="pptx pptx9" data-pptx='9'>
-						<a href='#id01' id='pptx_link9'><img id='pptx_img9' alt='pptx9' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/funciones.png"/></a>
-					</div>
-					<div class="pptx pptx10" data-pptx='10'>
-						<a href='#id01' id='pptx_link10'><img id='pptx_img10' alt='pptx10' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/historia_internet_memes.png"/></a>
-					</div>
-					<div class="pptx pptx11" data-pptx='11'>
-						<a href='#id01' id='pptx_link11'><img id='pptx_img11' alt='pptx11' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/html_5.png"/></a>
-					</div>
-					<div class="pptx pptx12" data-pptx='12'>
-						<a href='#id01' id='pptx_link12'><img id='pptx_img12' alt='pptx12' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/internet.png"/></a>
-					</div>
-					<div class="pptx pptx13" data-pptx='13'>
-						<a href='#id01' id='pptx_link13'><img id='pptx_img13' alt='pptx13' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/lenguajes_programacion.png"/></a>
-					</div>
-					<div class="pptx pptx14" data-pptx='14'>
-						<a href='#id01' id='pptx_link14'><img id='pptx_img14' alt='pptx14' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/redes_informaticas.png"/></a>
-					</div>
-					<div class="pptx pptx15" data-pptx='15'>
-						<a href='#id01' id='pptx_link15'><img id='pptx_img15' alt='pptx15' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/seguridad_informatica.png"/></a>
-					</div>
-					<div class="pptx pptx16" data-pptx='16'>
-						<a href='#id01' id='pptx_link16'><img id='pptx_img16' alt='pptx16' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/sistemas_admin_bases_datos.png"/></a>
-					</div>
-					<div class="pptx pptx17" data-pptx='17'>
-						<a href='#id01' id='pptx_link17'><img id='pptx_img17' alt='pptx17' src="https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/teaching.png"/></a>					
-					</div>	
-					
-					<div class="pptx pptx19">
-						<p>A pasionado por la educación. Lo que más amo en la vida es aprender. Cada día sin aprender algo es un día perdido.</p> 
-					</div>
-					<div class="pptx pptx22">
-						<p> Ese principio lo intento poner en práctica lo segundo que más amo: Compartir lo que he aprendido, lo que me parece interesante y útil, todo aquello que creo que puede ayudar a alguien </p> 
-					</div>
-					<div class="pptx pptx20">
-						<p>y que me encantó cuando alguien más me guió a ello. Enseñar es una pasión y un sueño para mí, y además un medio efectivo para reforzar mis conocimientos</p>
-					</div>
-					<div class="pptx pptx23">
-							<br/>
-							Haz click en la imagen para visitar mi blog educativo de informatica						
-							<a target="_blank" href="https://informaticos15.blogspot.com">
-								<img style='padding: 2% 15% 25% 15%; border:0;' src="informaticos15.png"/>
-							</a>
-					</div>
-					
-					<div id="id01" class="modal">
-			            <div class="modal-dialog">
-			              <div class="modal-content">
-			                <header class="containerheader">
-			                  <a href="#pptxs" class="closebtn">×</a>
-			                  <h2 id='pptx_shower_tit'>Didactica</h2>
-			                </header>
-			                <div class="containercontainer">
-			                  <iframe id='pptx_shower_frame' 
-			                          src="https://docs.google.com/presentation/d/e/2PACX-1vTmKY3bmFhkl5eT-oWLOA-bACxfNE1DDFZjg2-J3UkiLRAuQdwvsCP_wln94J273pllbQ4Gj9HWI7pa/embed?start=false&loop=false&delayms=3000" 
-			                          frameborder="0" width="100%" height="420px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-			                  </iframe>
-			                </div>
-			                <footer class="containerfooter">
-			                  <p style='color:white'>by Ivan Guillermo Lopez</p>
-			                  <div id="percent-loaded" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">                    
-			                  </div>
-			                </footer>
-			              </div>
-			            </div>
-			        </div>
-
-			        <style>
-			        .modal { 
-			            display:none; 
-			            position: absolute; 
-			            top:475vh;
-			            padding-top:0vh; 
-			            left: 0px;
-			            width: 100%; 
-			            height: 100%; 
-			            overflow: auto; 
-			            background-color: #000c; 
-			            z-index:80;
-		          		}
-			          /* Display the modal when targeted */
-			          .modal:target {display: block;position: absolute;}
-
-			          /* The modal box */
-			          .modal-dialog {display: block;vertical-align: middle;margin-top:30px;}
-			          /* The modal's content */
-			          .modal-dialog .modal-content {
-			            margin: auto;
-			            background-color: #232323;            
-			            border: 1px #777 solid;
-			            text-align: justify;
-			            width: 100%;
-			            height:75vh;
-			            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			            border-radius: 12px 12px;
-
-			            /* Add animation */
-			            -webkit-animation-name: example; /* Chrome, Safari, Opera */
-			            -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
-			            animation-name: example;
-			            animation-duration: 3s;
-			          }
-
-			          #pptx_shower_frame{ 	height:60vh;   }
-
-			          /* The button used to close the modal */
-			          .closebtn {text-decoration: none;float: right;font-size: 25px;font-weight: bold;color: var(--magenta);}
-			          .closebtn:hover, .closebtn:focus {color: var(--blue);text-decoration: none;cursor: pointer;}
-			          .containercontainer {padding: 2px 14px;}
-		          		header {background-color: white; font-size: 20px;color: black; padding:0px 10px;}
-		          		footer {background-color: white font-size: 20px;color: black; padding:0px 10px;}   
-		   	        </style>
-
-					<style type="text/css">
-						#educador{background-color:var(--magenta); height:85vh; 
-								display: grid;
-								grid-gap:4px;
-								grid-template-columns: 4fr repeat(11, 1fr);
-							    grid-template-rows: 1fr repeat(6, 1fr) ;font-weight: 500; text-shadow: 0.5px 0.5px #292929;
-							    grid-template-areas:
-							        "p p p . . w w w . . . ."
-							        "p p p . . . t t t t d d" 
-							        "p p p x x x x . q q c c"
-							        "z z z z . . . n f b b ñ" 
-							        "z z z z . . m m m b b ñ"					       
-							        "y y . . o o m m m a a a" 
-							        "y y e l k j i h g a a a"              
-							    }
-
-				    	#educador img{width:100%;height:100%;}   
-				    		.pptx img{border: 2.75px solid #fff}
-				    		.pptx17 img{border: 0px solid black}      
-						    .pptx0{grid-area: a;}  .pptx1{grid-area: b;} .pptx2{grid-area: c;}  
-						    .pptx3{grid-area: d;}  .pptx4{grid-area: e;} .pptx5{grid-area: f;}  
-						    .pptx6{grid-area: ñ;}  .pptx7{grid-area: g;} .pptx8{grid-area: h;}  
-						    .pptx9{grid-area: i;}  .pptx10{grid-area: j;} .pptx11{grid-area: k;} 
-						    .pptx12{grid-area: l;} .pptx13{grid-area: m;} .pptx14{grid-area: n;}
-						    .pptx15{grid-area: o; } .pptx16{grid-area: q; } .pptx17{grid-area: p; } 
-						    
-						    .pptx19{grid-area: t; font-size:16px; color:white; padding:1px; text-align:center;}
-						    .pptx20{grid-area: z; font-size:16px; color:white; padding-left:35%; text-align:center; } 
-						    .pptx21{grid-area: w;} 
-						    .pptx22{grid-area: x; font-size:14px; color:white; padding:1px; text-align:center}
-						    .pptx23{grid-area: y; font-size:13px; color:white; padding:1px 3px; text-align:center} 
-
-
-						    @media only screen and (max-width: 1200px){
-						    	.pptx5, .pptx6, .pptx7, .pptx8, .pptx9, .pptx10, .pptx11, .pptx12, .pptx13, .pptx14, .pptx15, .pptx16, .pptx17, .pptx18, .pptx20,  .pptx23 {display:none;}
-
-								#educador{
-									grid-template-rows: 1fr repeat(2, 3fr) repeat(2, 1fr); 
-									grid-template-columns: repeat(6, 1fr);
-									grid-template-areas:
-							        "w w w w w w"
-							        "a a b b c c"
-							        "d d d e e e"
-							        "t t t t t t"
-							        "x x x x x x"
-							        
-						    } 	
-						    .pptx22, .pptx19{font-size: 10px;}
-
-							@media only screen and (max-width: 500px) {
-								.sec_tit {font-size:10px;}				    	
-						    	#educador{height:83.3vh;	}
-
-						    	
-							    	
-							}
-					</style>
-
-					<script type="text/javascript">
-						var pptxs=
-                [
-                  ["datos_no_agrupados", "Datos no agrupados", 'https://docs.google.com/presentation/d/e/2PACX-1vRndRh69UxkKMdnXo-8NJuSvBFVhPO-vALoLAyaacHHZVURx8OxoYz-jZB30PoLCX65PiN6oJyoqfo3/embed?start=false&loop=false&delayms=3000'],
-
-                  ["derivada","Derivadas",  'https://docs.google.com/presentation/d/e/2PACX-1vSyWsf67g0hTONcUMN-tlXjAzHyoatA-u-C7agtV6wQFEuLCA4tvK-6cTSDPDXPebKOsZMGQjvIryZk/embed?start=false&loop=false&delayms=3000'],
-
-                  ["didactica", "Didactica",'https://docs.google.com/presentation/d/e/2PACX-1vSrG0GkskW6HR6z9hgkoQmq61UE_K81Stogr5Gwished9Sdox20PcrAhxSQOUgkB8bgsG6ZE4puXZ01/embed?start=false&loop=false&delayms=3000'],
-
-                  ["electronica_digital","Electronica Digital",'https://docs.google.com/presentation/d/e/2PACX-1vRCdEw85JiDkLsdGDjVVrpFDcH6LuojqAz1mFoUstDeq6tGMqHmp-FPmtmEsxrKz2eDYLChZzOK40h2/embed?start=false&loop=false&delayms=3000'],
-
-                  ["estructura_datos_2",  "Estructura Datos 2",'https://docs.google.com/presentation/d/e/2PACX-1vTvtZBStPW16UbZ9pm_eiW4ClMdjDyuINHmPNSrfpEHMUQeFfozknVf_f0HMbaPiHwxsTBayHZFo2NU/embed?start=false&loop=false&delayms=3000'],
-
-                  ["estructura_datos_3","Estructura Datos 3",'https://docs.google.com/presentation/d/e/2PACX-1vQH3_0WnKUT0V1Yv0xtszTMSixMEPiTDE4qqgduPSwj74Nu4f-Mm4yOdNtz2elLW_-G6TLeEXp7lcbn/embed?start=false&loop=false&delayms=3000'],
-
-                  ["funciones","Funciones", 'https://docs.google.com/presentation/d/e/2PACX-1vSz7Cuhk4abHtZCby7C-H_7-U0FK1A0ZEU9QM63VLlC2G8A2cMcqLvHf_uJcWhB0nEped-yKDxmLLm3/embed?start=false&loop=false&delayms=3000'],
-
-                  ["historia_internet_memes","Historia de Internet en Memes", 'https://docs.google.com/presentation/d/e/2PACX-1vQPbOEJmlAOhqGZSgWI6dw-PstlNQATLjnEIe2nfLtMsZvwWeYnLDlwK3EQnvzpHslfUiZzsjuVi6kc/embed?start=false&loop=false&delayms=3000'],
-
-                  ["html_5","Html 5",'https://docs.google.com/presentation/d/e/2PACX-1vQHrgHWROF9aBOBFFVIsHSAH8JEaKBTTym0SvWLFwbLY-fux7zqb9SHVodZcGgG_jSELyLfCI_57BRU/embed?start=false&loop=false&delayms=3000'],
-                  
-                  ["internet","Internet", 'https://docs.google.com/presentation/d/e/2PACX-1vT92Kk4Ia9bVM_KUDWjPZIxGK1GRfKsamNTG64hrnjzaqWuPsizgdy0BE5bfCqzi-pIvup_ZgbQaPdn/embed?start=false&loop=false&delayms=3000'],
-                  
-                  ["lenguajes_programacion","Lenguajes Programacion", 'https://docs.google.com/presentation/d/e/2PACX-1vSrG0GkskW6HR6z9hgkoQmq61UE_K81Stogr5Gwished9Sdox20PcrAhxSQOUgkB8bgsG6ZE4puXZ01/embed?start=false&loop=false&delayms=3000'],
-                  
-                  ["redes_informaticas","Redes Informaticas",'https://docs.google.com/presentation/d/e/2PACX-1vRAlK7AeyzoJK5lwLl1hWMmMEC8I5UNCqmYKEP9qVR7ouxsbCdX6b8-OxDop1m6mhO19qD3isMGcLxA/embed?start=false&loop=false&delayms=3000' ],
-                  
-                  ["seguridad_informatica","Seguridad Informatica",'https://docs.google.com/presentation/d/e/2PACX-1vTln-XIH3L6AA91-Wt06pqcIN2GRXL2zrdYEC6JGfqy84qeab7V0ncvbOWwCYuhYDi8UO2a1xvWmdBc/embed?start=false&loop=false&delayms=3000'],
-                  
-                  ["sistemas_admin_bases_datos","Sist. Admin. de Bases de Datos",'https://docs.google.com/presentation/d/e/2PACX-1vQFM-zsk_a02vf1T59ro4oyOSms2iMjAtvXqd5qsHjQ35z5jtTIUK9Jtz-ozzoBuHcMwUJ99DAN5dPy/embed?start=false&loop=false&delayms=3000'],
-                  
-                  ["sistemas_computacion","Sistemas Computacion", 'https://docs.google.com/presentation/d/e/2PACX-1vT4JQ4EusltX1FKSGTd2SHYEzEp4og2H1w0BLzDZl0dikc2KpWy9pKqtUoRDNFT3l4-ByrdHTocLDKU/embed?start=false&loop=false&delayms=3000'],    
-
-                  ["descartes", "Descartes",'https://docs.google.com/presentation/d/e/2PACX-1vTNBdAb2wgOK10TA61NemgvqSR_YY9uNiz1XSM5_xfakTRqhZ9PjztwHvUCDSJiYDLfmwYgxjwylESL/embed?start=false&loop=false&delayms=3000']
-                ];
-
-				 		var shower = document.getElementById('pptx_shower_frame');
-		         		var shower_tit = document.getElementById('pptx_shower_tit');
-
-								function shuffle(array) {
-		          		var currentIndex = array.length, temporaryValue, randomIndex;
-		          			while (0 !== currentIndex) {
-			            randomIndex = Math.floor(Math.random() * currentIndex);
-			            currentIndex -= 1;
-
-									    temporaryValue = array[currentIndex];
-			            array[currentIndex] = array[randomIndex];
-			            array[randomIndex] = temporaryValue;
-									  }
-									  return array;				  
-									}
-								// Used like so	
-								function pptxs_change(){
-									var i;
-									for (i = 0; i < 15; i++) {
-									  document.getElementById(`pptx_img`+`${i}`).src='https://raw.githubusercontent.com/ivanguillermo/ivanlopezpedreanez/gh-pages/'+ pptxs[i] +'.png';
-									  document.getElementById(`pptx_link`+`${i}`).href='#id01';
-									}
-									ranpptxs = shuffle(pptxs);
-								};									
-										          
-		        function pptxs_change(){	
-							ranpptxs = shuffle(pptxs);						
-							for (i = 0; i < 15; i++) {
-							  document.getElementById(`pptx_img`+`${i}`).src='imgx/pptx/'+ pptxs[i][0] +'.png';							  
-							}
-							
-						};									
-						
-						setInterval(pptxs_change, 15000)
-
-						var pptxss = document.querySelectorAll('.pptx');
-						pptxss.forEach(pptx => pptx.addEventListener('click', show))
-
-				        function show(){
-				            var j = this.dataset.pptx;           
-				            var k = pptxs[j][2];
-				            var l = pptxs[j][1];
-				            shower.src = k ;
-				            shower_tit.innerHTML = l;				            
-				          }	          
-		        		pptxs_change();           
-      				</script> 	   						
-				</section>		
-			</div>
-		</div>
-			
-		<div class="item foot"> 
-					   <center class="rrss">
-					        <a id='facebook' href="https://www.facebook.com/ivanguillermolp" target="_blank" rel="noopener"><div><i class="fa fa-facebook-official"></i></div></a>
-					        <a id='instagram' href="https://www.instagram.com/ivanguillermolp" target="_blank" rel="noopener"><div><i class="fa fa-instagram"></i></div></a>
-					        <a id='twitter' href="https://twitter.com/ivanguillermolp" target="_blank" rel="noopener"><div><i class="fa fa-twitter"></i></div></a>
-					        <a id='youtube' href="https://www.youtube.com/channel/UCyGK5IPY9cHB_k_5u43oMtA?view_as=subscriber" target="_blank" rel="noopener"><div><i class="fa fa-youtube"></i></div></a>
-					        <a id='facebook' href="https://www.linkedin.com/in/ivanguillermolp/" target="_blank" rel="noopener"><div><i class="fa fa-linkedin"></i></div></a>
-					        <a id='facebook' href="https://github.com/ivanguillermo" target="_blank" rel="noopener"><div><i class="fa fa-github"></i></div></a>
-				    	</center>
-				    	<div style='background-color: black; height:5.5vh'></div>
-		</div>
-			
-		<style type="text/css">
-		 		.rrss{
-							border-color: black;
-							text-align:center;
-							height:11vh;
-							color:white;
-							display: flex; flex-flow: row nowrap; justify-content: center; align-items: flex-start;
-							padding-top: 0.5vh;
-							font-size:2.5vh;
-
-						}
-						.rrss *{color:white;}
-						.rrss a{text-decoration: none}
-						.rrss div{ border:3px double white; border-radius:50%; width:6vh; height: 6vh;text-align:center;
-		                  display: flex; flex-flow: row wrap; justify-content: center; align-items: center;
-		                  margin: 0px 15px;}
-		                .rrss div:hover {background: var(--color);} 
-		                .rrss div:hover > i{color:black; } 
-
-
-
-
-		                @media only screen and (max-width: 800px) {
-
-		                	.rrss div{width: 30px; height:30px;}
-		                	#youtube{display:none;}
-
-
-		                	html{overflow:hidden;}
-		                }
-		</style>
-	
-	</body>
-
-
-		<style>
-					:root{
-						--color:#4fdb98;
-						--blue:#1AA9EC;
-						--orange:#ff9800;
-						--magenta:#D1215F;
-						--green: #a3bf34;
-					}
-					@font-face {
-					  font-family: Roboto;
-					  src: url('https://fonts.googleapis.com/css?family=Roboto');
-					  font-family: Macondo;
-					  src: url('https://fonts.googleapis.com/css?family=Macondo');
-					  font-family: Volkorn;
-					  src: url('https://fonts.googleapis.com/css?family=Volkorn');
-					}
-					html{overflow:hidden;	scroll-behavior:;}
-
-					body {background: black;font-size: 120%;}
-					button{background-color:var(--color);}
-					section{height:92vh;}
-						.sec_tit{color:white;text-align:center;width:100%;margin-top: 20px;margin-bottom: 10px;text-shadow: 0.5px 0.5px #292929;padding:10px;}	
-
-					a.active span{font-weight:600;font-size: 110%;color:#eee;text-shadow: -0.61px -0.9px var(--color)}
-
-							.jumbotron, #quote, #yo_descripcion, #logos{z-index: 2; position: relative;}
-							
-							#translator, #programmer {position: relative;top:-20px;}
-							{position: relative;top:-20px;}
-							#matematico{position: relative;top:-10px;}
-							.body2{
-								width:50%;
-								border:0px solid yellow;
-								background: transparent;height:300;
-								z-index:;
-								position:absolute; ;
-								transform:rotate(-45deg);
-								height:400px;
-								width:250px;
-								top:-100;
-								left:30%;
-							}
-
-							
-							@-webkit-keyframes subir {
-				            0% {top:500px;}
-				            100% {top:-1300px;right:500px}
-				                      
-				          }
-				          /* Add animation (Standard syntax) */
-				          @keyframes subir {
-				            0% {top:500px;}
-				            100% {top:-1300px;}
-				              
-				          }
-				         
-				            
-							.balloon{
-								-webkit-animation-name: subir; /* Chrome, Safari, Opera */
-				            	 /* Chrome, Safari, Opera */
-				            	animation-name: subir;     	 
-				            	transform:rotate(30deg);
-						
-									
-								font-size: 12px;	
-								border-radius: 65%;
-								display:inline-flex;
-								justify-content: center;
-								align-items: center;
-								align-content: center;
-								top:-1300px;
-								position:absolute;	
-								width: 8vw;	
-								height: 10vw;
-								font-weight: 700;
-
-							}		
-		</style>
-
-		<script type="text/javascript">
-				const navs = document.querySelector('#navbarIvan');  const topOfNav = navs.offsetTop;
-
-				const yop = document.querySelector('#quote');  const topOfYop = yop.offsetTop -10   ;	
-			  	const tra = document.querySelector('#translator');  const topOfTra = tra.offsetTop -10  ;
-			  	const dev = document.querySelector('#programmer');  const topOfDev = dev.offsetTop -10 ;
-			  	const mat = document.querySelector('#matematico');  const topOfMat = mat.offsetTop -10;
-			  	const edu = document.querySelector('#educador');  const topOfEdu = edu.offsetTop -10 ;
-			  	const rrss = document.querySelector('.rrss');  const topOfRrss = rrss.offsetTop -10;
-
+    <meta property="og:title" content="Equistrece">
+    <meta property="og:image" content="img/equistrece_logo_circle.png">
+    <meta property="og:description" content="equistrece">
+    <meta property="og:url" content="https://equistrece.net.ve">
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@equistrece" />
+    <meta name="twitter:player" content="https://equistrece.com.ar" />
+    <meta name="twitter:creator" content="@ivanlopezpedreanez" />
+    <meta name="twitter:title" content="equistrece" />
+    <meta name="twitter:description" content="Escucha online la radio equistrece" />
+    <meta name="twitter:image" content="img/equistrece_logo_circle.png" />
+    <meta name="twitter:image:alt" content="equistrece Radio Online" />
+    
+    <meta content='equistrece' name='description'/><!--<meta content='3000' http-equiv='refresh'/>-->
+     <!-- GOOGLE FONTS-->
+  <link async='async' href='https://fonts.googleapis.com/css?family=Nova+Square|Barriecito' rel='stylesheet'/>
   
-				function activeNav(){
-				    if(window.scrollY >= topOfYop && window.scrollY < topOfTra)  {
-				    	document.querySelector('#quote').classList.add('active');} 
-				    	else{document.querySelector('#navYo').classList.remove('active');}
+  <link async="async" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<script async="async" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <!--<link async="async" rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">-->
+  <title>Equistrece</title>
+</head>
 
-				    if(window.scrollY >= topOfTra && window.scrollY < topOfDev)  {
-				    	document.querySelector('#navTra').classList.add('active');} 
-				    	else{document.querySelector('#navTra').classList.remove('active');}
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKV9DCM"  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+   <div class="wrapper">
+      <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menú
+        </button>
+        <ul id="menu-list">
+          <li>  <div class="container"><a class="btn" href="#" style="z-index:7;color:white;"> equ1str3ce</a></div></li>
+          <li>  <a href="/envivo"><i class="fa fa-play"></i> Musik</a>  </li>
+          <li>  <a href="/programación.html"><i class="fa fa-tv"></i> Anime</a>  </li>          
+          <li>  <a href=""><i class="fa fa-video-plus"></i> Film</a> </li>
+          <li>  <a href=""><i class="fa fa-gamepad"></i>  Games</a>  </li>
+          <li>  <a href="contacto.html"><i class="fa fa-times-circle"></i> x13</a>  </li>
+        </ul>
+      </nav>
+    
 
-				    if(window.scrollY >= topOfDev && window.scrollY < topOfMat)  {
-				    	document.querySelector('#navPro').classList.add('active');} 
-				    	else{document.querySelector('#navPro').classList.remove('active');}
+    <div>
+      <marquee id="noticias" direction='up' scrollamount="2" scrolldelay="200">
+        <p><b>#ShamelessS10:</b> Este domingo regresa una de las mejores series de la actualidad. Por Showtime sera el estreno de la 10 temporada de Shameless. esta vez sin la presencia de Fiona</p>
 
-				    if(window.scrollY >= topOfMat && window.scrollY < topOfEdu)  {
-				    	document.querySelector('#navMat').classList.add('active');} 
-				    	else{document.querySelector('#navMat').classList.remove('active');}
-				    	
-				    if(window.scrollY >= topOfEdu)  {
-				    	document.querySelector('#navEdu').classList.add('active');} 
-				    	else{document.querySelector('#navEdu').classList.remove('active');}
-				  } 
+        <p><b>DESCARGATE NUESTRA APP:</b> Ya nuestra app está disponible en la PlayStore. Escuchá equistrece desde tu Android cuando quieras</p>
+
+        <p><b>#KEANEenBAIRES</b> El Viernes 29 de Noviembre se presenta la banda inglesa Keane en el Baires Arena de Villa Crespo como parte de su tour Latinoamericano</p>
+      </marquee>
+    </div>
+
+    <div class="top">
+      <header class="hero">
+        <a><h1>Equ1str3ce</h1></a>
+        <a><span style="font-size:16px">Music · Series · Animeアニメ · Films</span></a>
+        <a><span style="font-size:16px">All in One Three</span></a>
+        <img alt="equistrece" style="width: 80px;height:70px;border-radius:50%;border:0px; margin:10px" src="equistrece_eye.jpg"/>
+      </header>
+      <div class="cta cta1">  <p >Descargate nuestra app</p>  <button href="">Descargar</button> </div>  
+      <div class="cta cta2"><button id="acknowledge">Desarrollado por</button></div>
+      </div>
+             
+    <section class="features">
+      <div class="feature" style="background:black">
+        <h3 style="color:white"></h3>   
+           <iframe width="100%" src="https://www.youtube.com/embed/nSpmZTb-IPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
+
+      <div class="feature" style="background:#3d47a9">
+        <br/></br></br>
+         <h3 style="color:white">Nuestras Redes</h3>
+              <div id="rrss" class="ev-container ev-padding-16 ev-center ev-white ev-large">
+                  <a href="https://www.facebook.com/equistrece"><i class="fa fa-facebook-official ev-hover-opacity rrss"></i></a>
+                  <a href="https://www.instagram.com/equistrece" target="_blank"><i class="fa fa-instagram ev-hover-opacity rrss"></i></a>
+                  <a href="https://twitter.com/equistrece"_blank"><i class="fa fa-twitter ev-hover-opacity rrss"></i></a>
+                  <a href="https://www.youtube.com/equistrece" target="_blank"><i class="fa fa-youtube ev-hover-opacity rrss"></i></a>
+                  <a href="https://www.spotify.com/equistrece" target="_blank"><i class="fa fa-spotify ev-hover-opacity rrss"></i></a>  
+              </div>
+      </div>
+      <div class="feature"id="feature1">
+        <iframe width="100%" src="https://www.youtube.com/embed/9auz3npUFSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+      </div>
+      <div class="feature" id="feature2">
+        <span class="icon">🎵</span>
+        <h3>Música</h3>
+        <p><b>Lo mejor de nuestra música</b></p>
+      </div>
+    </section>
+
+
+    <nav class="menu2">
+        <ul id="efemerides">          
+          <li><a href=""><b>R3-SENA</b> <span class="cat">ANIME</span> Serial Experiments Lain</a> <p><img class="efe_img" src="serial_experiments_lain.jpeg"/></p> </li>
+          <li><a href=""><b>R3-SUMEN</b> <span class="cat">FILM</span> 1984</a> <p><img class="efe_img" src="1984.jpeg"/></p>  </li>          
+          <li><a href=""><b>R3-c0M3NDAC1ON</b> <span class="cat">MUSIC</span> Erys - Jaden</a> <p><img class="efe_img" src="erys_jaden.png"/></p>  </li>        
+        </ul>
+    </nav>  
+
+     <div class="medio">
+
+      <header class="hero2">
+        <a><h1 >Equistrece</h1></a>
+        <a><span style=' font-size: 30px;'>Music · Series · Animeアニメ · Films</span></a>
+        <a><span style=' font-size: 23px;'>All-in-One-Tres</span></a>
+        <img alt="equistrece" style="width: 80px;height:80px;border-radius:50%;border:0px; margin:30px" src="equistrece_eye.jpg"/>
+      </header>
+      <div class="ctas ctas1"><button id="acknowledge">Desarrollado por</button> </div>  
+      <div class="ctas ctas2">
+        <div id="equipo" style="font-size:15px;word-spacing:140%%">
+          <h2 class="volteado">equistrece</h2>
+          
+        </div>
+      </div>
+      <div class="ctas ctas3" ><a class="twitter-timeline"  data-lang="es" data-theme="dark" data-height="150%" data-dnt="true" data-link-color="#E81C4F" href="https://twitter.com/equistrece?ref_src=twsrc%5Etfw">Tweets de equistrece </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+    </div>
+    <!--banner-->
+ <section class="banner"></section>
+    <!--mapa-->
+  <h1 style="color:white">NOTICIAS</h1>
+  <section class="bottom" id="bottom">
+        <div class="container">
+
+          <div class="news item1">
+            <a href="">
+              <b>NOV</b> 
+              <span class="cat">10</span> 
+              Shameless S10
+            </a> 
+            <p style='font-size: 18px;padding: 15px 14px 0px 8px; line-height: 200%;text-align:center'>
+              <img class="efe_img" src="shameless.jpeg"/>
+              <br/>
+              Este domingo regresa una de las mejores series de la actualidad. Por Showtime sera el estreno de la 10 temporada de Shameless. esta vez sin la presencia de Fiona
+            </p>
+          </div> 
+
+          <div class="news item2">
+            <a href="">
+              <b>NOV</b> 
+              <span class="cat">14-18</span> 
+              Festival de Jazz 2019
+            </a> 
+            <p>
+              <img class="efe_img" src="bajazz2019.jpg"/>
+            </p>
+          </div>
+
+          <div class="news item3">
+            <a href="">
+              <b>NOV</b> 
+              <span class="cat">29</span> 
+              KEANE en Baires
+            </a> 
+            <p style='font-size: 18px;padding: 15px 14px 0px 8px; line-height: 200%;text-align:center '>
+              <img class="efe_img" src="keane.jpeg"/>
+              <br/>
+              El Viernes 29 de Noviembre se presenta la banda inglesa Keane en el Baires Arena de Villa Crespo como parte de su tour Latinoamericano
+            </p>
+          </div>
+
+        </div>
+  </section>
+  </div>
+  <div class="creditos">
+              <br/>
+              <h6 style="letter-spacing: 2px;word-spacing: 200%"> Designed   by   <a href="ivanlopezpedreanez.net.ve" style="color:rgb(0,220,220);text-decoration: none; ">Ivan Guillermo Lopez</a></h6>
+              <h4 style="font-family: 'Nova Square';"> LP Freelancer Services</h4>
+  </div>
   
-				window.addEventListener('scroll', activeNav);
+</body>
+<style>
+    :root {}
+    html { box-sizing: border-box; font-weight: 900; font-size: 10px;color: var(--black);text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); }
+    *,*:before,*:after {  box-sizing: inherit;}
+    body {background:linear-gradient(#111,#f2172d,#000,#f2172d,#121212);background-size:340px,auto;min-height:calc(100vh - 100px);margin:50px;letter-spacing:-1px;font-size:12px;}
+    h1, h2, h3, h4, h5, h6 {  margin: 0 0 5px 0;}
+    .item { display: grid; justify-content: center; align-items: center; border: 5px solid rgba(0, 0, 0, 0.03); border-radius: 3px; font-size: 35px;}
+    .item p {margin: 0 0 5px 0;}
+    button {background: white;border: 1px solid black;padding: 8px 20px;margin:5px;font-size:24px;font-weight:800;}
+    img { max-width: 100%; margin:-5px;}
+    .menu ul {  background: linear-gradient(rgba(0,0,0,0.98), rgba(0,0,0,0.95) );background-repeat: no-repeat;background-size: cover;background-position:center center;
+      display: grid; grid-gap: 5px; padding: 0; list-style: none; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));font-size:15px;}
+    .menu a { min-height:50px;background: transparent; display: block; text-decoration: none; padding: 15px 10px 0px 10px; text-align: center; color: white; text-transform: uppercase;font-size: 15px;}
+    [aria-controls="menu-list"] {display: none;}
+    .menu2 ul {  background: linear-gradient(rgba(0,0,0,0.98), rgba(0,0,0,0.95) );background-repeat: no-repeat;background-size: cover;background-position:center center;
+      display: grid; grid-gap: 5px; padding: 0; list-style: none; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));font-size:15px;}
+    .menu2 a { min-height:50px;background: transparent; display: block; text-decoration: none; padding: 15px 10px 0px 10px; text-align: center; color: white; text-transform: uppercase;font-size: 15px;}
+    
+    #noticias{background:white;width:100%;height:30px;;}
+    i {padding-right:2px;color:rgb(220,0,60);transition: 0.05s all}
+    i:hover{font-size:120%;padding-right:4px}
 
-							colors=['var(--blue)', 'var(--green)', 'var(--magenta)', '#ff00ff', '#ffc600'];
-							letras=['skyblue', 'black', 'white']
-							hello=['Hola', 'Hallo', 'Translator', 'Spanish', 'Hi', 'Francais', 'Deutsch', 'Ubersetzer', 'ESPAÑOL', 'English', 'Bonjour']
-					
-									
-							function glovos() {
-							  
-							  var translator= document.querySelector('.body2');
-							  
-							  var para = document.createElement("div");
-							  var left = Math.floor(Math.random() * 100) - 100;
-							  var vel =  (Math.floor(Math.random() * 3)+25);		  	
-							  			  
-							  para.style.background = colors[Math.floor(Math.random() * 5)];;
-							  para.style.color = letras[Math.floor(Math.random() * 3)];		
+    /*Marquee*/
+     marquee p {word-spacing:150%;}
+     marquee p b{font-size:120%;padding: 0px 5px; color:rgb(220, 0, 40);font-weight:800;word-spacing:100%}
 
-							  para.style.left = `${left}`+`vw`;	
-							  
-							  para.style.animationDuration = `${vel}`+'s';			  		  
-							  para.innerHTML = `
+    /* .wrapper */
+    .wrapper {display: grid;grid-gap: 20px;}
+    .top { display: grid; grid-gap: 20px; grid-template-areas: "hero hero hero cta1" "hero hero hero cta1" "hero hero hero cta2"}
+    .hero { grid-area: hero; min-height: 400px; background: white url(x13.jpg); background-size: cover; background-position: center center;
+      padding: 50px; display: flex; flex-direction: column; align-items: start; justify-content: center;}
+    .hero > * { background: white; padding: 5px;}
+    .cta { background: display: grid; align-items: center; justify-items: center; align-content: center;}
+    .cta1 {   grid-area: cta1; background:white url('app2.png');background-position:center center; background-repeat:no-repeat;background-size:cover;}
+    .cta2 {  grid-area: cta2;background:black url('LP_FreelancerS_heading.png'); background-size:100% 100%;background-repeat: no-repeat;background-position: center center; min-width:100px}
+      
+    .ev-opacity,.ev-hover-opacity:hover{opacity:0.60} 
+    .rrss {width:40px; height: 40px; font-size: 20px; border-radius:50%; border:4px double rgb(120,0,120); color:black ;background-color:white;padding-top:4px;margin:4px;}
 
-							  <div style=' background: white; width:35px; height:15px;position:relative;border-radius:50%; top:-30%; opacity:0.5; margin-left:10%;transform:rotate(-45deg)'>
-							  </div>
-							  <p style='border:; width:80%; position:relative; text-align:center; left:-18%'>`+ hello[Math.floor(Math.random() * 11)] + `
-							  </p>
-							  <div style=' background: black; width:6px; height:3px;position:relative;top:49%;left:-32%; transform:rotate(-18deg)'></div>
-							  <div style=' background: ${para.style.background}; width:8px; height:6px;position:relative;top:52%;left:-35%; transform:rotate(-18deg)'></div>
-							  <div style=' background: black; width:0.5px; height:145px;position:relative;top:100%;left:-38%; transform:rotate(0deg)'></div>
+    /* Features! */
+    .features {display: grid; grid-gap: 20px; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));}
+    .feature { background: white;padding: 10px; border: 1px solid white; text-align: center; box-shadow: 0 0 4px  rgba(0,0,0,0.1);}
+    .feature .icon { font-size: 50px;}
+    #feature2{background:rgb(220,0,80);}
+    .feature p { color: rgba(0,0,0,0.5);}
 
-							  `;
-		  
-						if(window.scrollY >= topOfTra && window.scrollY <= topOfDev)  {
-				    	document.getElementById("myDIV2").appendChild(para);
-				    	para.classList.add('balloon');
-						para.classList.add('transition');	
-				    	;
-				    	} 
-		    	/*else if(window.scrollY > topOfDev){document.querySelectorAll('.balloon').forEach (balloon => balloon.style.display='none';}*/	  			  
-				
-				}
+    #efemerides li a{ background:white;border:2px solid rgb(220,0,60);color:black;}
+    .cat{padding:0px 2px;color:white;background:rgb(220,0,80);margin:0px 6px;font-size:25px;}
+    .efe_img{margin-left:7%;width:90%;height:100%;text-align:center;}
 
-				setInterval(glovos,1300)
+    /* About Section */
+    .banner { height:300px; display: grid; grid-template-columns: 400px 1fr; align-items: center;background:black url('banner_x13_big.png');background-position:center center; background-repeat:no-repeat;background-size:100% 100%;}
+    .bottom { display: grid; grid-template-columns: 1fr; align-items: center;background: black}
+    .container{
+      display:grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
 
-				/*function clean(){
-					var glovos = document.getElementsByClassName('balloon');
-	 				glovos.forEach( glovo => glovo.parentNode.removeChild(glovo))
-					}
-				setInterval(clean, 13000)*/
-		</script>		
+    }
+    .container p{padding-left:40px;font-size: 25px;background:white;} 
+    .news{background:white;border:2px solid rgb(220,0,60);color:black;}
+      .news a{font-size: 20px;padding-left: 10%;text-decoration:none ;text-underline-position:left under;}
+    .zoom{width:48px;height:48px;float:left;border:3px solid black;}
 
-		<script type="text/javascript">
-			var sections=['#','#quote','#translator','#programmer','#matematico','#educador'];
-			var c = 0;	
+    /*hero2*/
+    .hero2{ grid-area:hero2;min-height:400px;background:url('psycho.png'), url('freaks.png'), url('redSmoke.jpeg');background-size:cover;background-position:center center;padding:50px;display:flex;flex-direction:column;align-items:start;justify-content:center;}
+    .hero2 > * { background: white; padding: 5px;font-size: 130%;font-family: "Barriecito";}
+    .ctas { display: grid; align-items: center; justify-items: center; align-content: center;}
+    .ctas1 { grid-area: ctas1; background:white url();background-position:center center; background-repeat:no-repeat;background-size:100% 100%;}
+    .ctas2 { grid-area: ctas2; grid-area: ctas2;background:black url(''); width:50px;}
+      .volteado{display:relative ;font-size: 20px; background:white; margin:0px 10px; top:-0px; padding:0px 10px; border:0px; transform: rotate(-90deg);   -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3))}
+    .ctas3 { grid-area: ctas3;background:white url('');}
+    #equipo {font-size:20px; font-weight:400; text-align: left;font-stretch: 95%}
+    .medio { display: grid; grid-gap: 15px; grid-template-columns: 1fr 12fr 4fr;
+          grid-template-areas: 
+          "ctas2 hero2 ctas1" 
+          "ctas2 hero2 ctas3"
+          "ctas2 hero2 ctas3"
+        }
 
-			function scrollNav() 
-				{			  
-				  window.open(sections[`${c}`],'_self');
-				  if(c < 5) {c++;			  }
-				  else{	c = 0;}
-			  	}
+    #acknowledge{background: white;border: 3px solid gold;padding: 6px 8px;margin:3px;font-size:16px;}
+    .creditos{ position:relative;bottom:0%;left:0%;width:100%; bottom:0%;z-index:4;background:black;color:white;font-size:20px;text-align:center;padding:1px 20px;}
 
-			function forwardNav(e) 
-				{		
-				  
-				  console.log(e.keyCode);
-				  if((c < 5) &&  (e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 13 || e.keyCode == 34) ){ c++};
-				  if((c > 0) &&  (e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 8 || e.keyCode == 33) ){ c--};	
-				  window.open(sections[`${c}`],'_self');   
-			  	}
-	
-			  window.addEventListener('wheel', scrollNav);
-			  window.addEventListener('keydown', forwardNav);
-		</script>
+    
 
-		
+
+    @media (max-width: 1000px) { 
+      .menu { order: -1;perspective: 800px;}
+      [aria-controls="menu-list"] { display: block; margin-bottom: 10px;}
+      .menu ul { max-height: 0; overflow: hidden; transform: rotateX(90deg); transition: all 0.5s;}
+      [aria-expanded="true"] ~ ul { display: grid; max-height: 500px; transform: rotateX(0);}
+      [aria-expanded="false"] .close { display: none;}
+      [aria-expanded="true"] .close { display: inline-block;}
+      [aria-expanded="true"] .open { display: none;}
+      .banner { height:250px;}
+      .menu a{font-size:12px;}
+      .mapa__details p{padding-left:18px;font-size: 18px} 
+      #equipo {font-size:10px; font-weight:300;font-stretch: 100%}
+      #acknowledge{display:none;}
+      .medio { display: grid; grid-gap: 20px; 
+          grid-template-areas:           
+          "ctas2 hero2 hero2" "ctas2 hero2 hero2" "ctas2 ctas1 ctas3"  "ctas2 ctas1 ctas3"       
+        }
+        #efemerides { font-size:16px;}
+        .cat{padding:0px 2px;color:white;background:rgb(220,0,80);margin:0px 2px;font-size:18px;}
+    .efe_img{margin-left:10%;width:90%;height:160px;text-align:center;}
+    }
+    .news p{font-size: 10px;}
+    @media (max-width: 700px) {
+     .top {grid-template-areas: "hero hero" "cta1 cta2 cta2" "cta1 cta2 cta2"}
+     .medio{display:none;}
+    
+      
+      .banner { grid-template-columns: 1fr;height:200px;}
+      .mapa { grid-template-columns: 1fr;}
+      
+      .mapa__details p{padding-left:15px;font-size: 15px} 
+      .menu2 {display:none;}
+    }
+    @media (max-width: 650px) {
+      #feature2 {display:none;}
+
+       
+    }
+    @media (max-width: 499px) {
+      .top {grid-template-areas:"hero""cta1""cta2" "cta2"}
+      .mapa__details p{padding-left:10px;font-size: 10px} 
+      #feature2 {display:block;}
+      .cta2{display:none;}
+      .bottom { display:none}
+    }
+    @media (max-width: 450px) {
+      .banner{height:100px;}
+      .mapa{height:200px;}
+       }
+ </style>
+
+ <script>
+        const zooms=['url("mapas/mapa1.jpeg")','url("mapas/mapa2.jpeg")','url("mapas/mapa3.jpeg")','url("mapas/mapa4.jpeg")','url("mapas/mapa5.jpeg")'];
+        var z=2;
+        function zoom_in(){
+          if (z>0){ z-=1;};
+          document.getElementById('mapa').style.backgroundImage= zooms[z];
+        }
+        function zoom_out(){
+          if (z<4){ z+=1;};
+          document.getElementById('mapa').style.backgroundImage= zooms[z];
+        }
+      </script>
+      <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+   <style>   
+                  @font-face {font-family: Lato; src: url(https://fonts.googleapis.com/css?family=Lato|Economica|Monserrat); }
+                    .container {font-family:Lato, sans-serif;font-stretch: 25%;font-weight: 800; }
+                     html { font-family:Lato, sans-serif ; font-weight: 500; }
+                  }
+                  @-webkit-keyframes top {  
+                                     from {    -webkit-transform: translate(0rem, 0);   transform: translate(0rem, 0);  }
+                                       to {  -webkit-transform: translate(0rem, 3.5rem);   transform: translate(0rem, 3.5rem);  }
+                    }
+                  @keyframes top {   
+                                     from {  -webkit-transform: translate(0rem, 0);   transform: translate(0rem, 0);  } 
+                                       to {  -webkit-transform: translate(0rem, 3.5rem);   transform: translate(0rem, .5rem);  }
+                    }
+                  @-webkit-keyframes bottom { 
+                                       from {-webkit-transform: translate(-11.5rem, 0);   transform: translate(-11.5rem, 0);  }  
+                                         to {-webkit-transform: translate(0rem, 0);  transform: translate(0rem, 0);  }
+                    }
+                  @keyframes bottom { 
+                                      from { -webkit-transform: translate(-11.5rem, 0);   transform: translate(-11.5rem, 0);  }  
+                                      to { -webkit-transform: translate(0rem, 0);  transform: translate(0em, 0);  }
+                    }
+                  .btn { position: relative;  letter-spacing: 0.15em; margin: 0 auto;  padding: 1rem 2.5rem;  background: transparent;  outline: none;  font-size: 28px; transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;}
+                  .btn::after, .btn::before { content: "";  position: absolute;  height: 40%;  width: 10%;  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);  z-index: -2;  border-radius: 50%;}
+                  .btn::before {  background-color: #c92918;  top: -0.75rem;  left: 0.5rem;  -webkit-animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate; animation: top 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;}
+                  .btn::after { background-color: #e74c3c;  top: 3rem;  left: 13rem;  -webkit-animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate; animation: bottom 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;}
+                  .btn:hover { color: blue;}
+                  .btn:hover::before, .btn:hover::after {top: 0;height: 100%; width: 100%;border-radius: 0;-webkit-animation: none; animation: none;}
+                  .btn:hover::after {left: 0rem;}
+                  .btn:hover::before {top: 0.5rem;  left: 0.35rem;}
+             </style> 
 </html>
